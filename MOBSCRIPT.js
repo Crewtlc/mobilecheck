@@ -23,7 +23,6 @@ function validateForm() {
     alert("Please provide remarks for mobile position 'Switch On'.");
     return false;
   }
-  console.log(remarks);
   alert("Form submitted successfully!");
   
   return true;
