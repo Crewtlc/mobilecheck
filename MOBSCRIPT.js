@@ -7,14 +7,14 @@ function toggleRemarks() {
 function validateForm() {
   const cliName = document.getElementById("cliName").value;
   const dateTime = document.getElementById("dateTime").value;
-  const name = document.getElementById("name").value;
+  const name = document.getElementById("crewName").value;
   const cmsId = document.getElementById("cmsId").value;
   const cugNumber = document.getElementById("cugNumber").value;
   const personalNumber = document.getElementById("personalNumber").value;
   const mobilePosition = document.getElementById("mobilePosition").value;
   const remarks = document.getElementById("remarks").value;
 
-  if (!cliName || !dateTime || !name || !cmsId || !cugNumber || !personalNumber || !mobilePosition) {
+  if (!cliName || !dateTime || !crewName || !cmsId || !cugNumber || !personalNumber || !mobilePosition) {
     alert("Please fill out all fields.");
     return false;
   }
