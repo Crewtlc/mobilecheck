@@ -23,11 +23,8 @@ function validateForm() {
     alert("Please provide remarks for mobile position 'Switch On'.");
     return false;
   }
-
-  return true;
 }
-
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyU86Ya4C8w5x3Oc3Tg_Xz2OBbX8wyUzn5ZB4ihNl8cwe68cRJtZgqpt1Kmo29blPu2/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyU86Ya4C8w5x3Oc3Tg_Xz2OBbX8wyUzn5ZB4ihNl8cwe68cRJtZgqpt1Kmo29blPu2/exec';
 const form = document.forms['mobileCheckForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
 
