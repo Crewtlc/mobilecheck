@@ -25,5 +25,6 @@ function validateForm() {
   }
 
   alert("Form submitted successfully!");
+  console.log(remarks);
   return true;
 }
