@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Checking</title>
+  <link rel="stylesheet" href="MOBstyles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Mobile Checking</h2>
+    <form id="mobileCheckForm" onsubmit="return validateForm()">
+      <label for="dateTime">Date and Time:</label>
+      <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+      <label for="cliName">CLI Name:</label>
+      <select id="cliName" name="cliName" required>
+        <option value="" disabled selected>Select CLI Name</option>
+        <option value="CLI1">CLI1</option>
+        <option value="CLI2">CLI2</option>
+        <option value="CLI3">CLI3</option>
+      </select>
+
+      <label for="designation">Designation:</label>
+      <select id="designation" name="designation" required>
+        <option value="" disabled selected>Select Designation</option>
+        <option value="Loco Pilot">Loco Pilot</option>
+        <option value="Assistant Loco Pilot">Assistant Loco Pilot</option>
+      </select>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="cmsId">CMS ID:</label>
+      <input type="text" id="cmsId" name="cmsId" required>
+
+      <label for="cugNumber">CUG Number:</label>
+      <input type="text" id="cugNumber" name="cugNumber" maxlength="10" pattern="\d{10}" required>
+
+      <label for="personalNumber">Personal Number:</label>
+      <input type="text" id="personalNumber" name="personalNumber" maxlength="10" pattern="\d{10}" required>
+
+      <label for="mobilePosition">Position of Mobile:</label>
+      <select id="mobilePosition" name="mobilePosition" required onchange="toggleRemarks()">
+        <option value="" disabled selected>Select Mobile Position</option>
+        <option value="Switch On">Switch On</option>
+        <option value="Switch Off">Switch Off</option>
+      </select>
+
+      <div id="remarksContainer" style="display: none;">
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" name="remarks"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="MOBscript.js"></script>
+</body>
+</html>
